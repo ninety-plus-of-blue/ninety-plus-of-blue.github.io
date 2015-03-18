@@ -25,8 +25,8 @@ Not to mention the gut punch of a late equalizer, but let's be honest that anyth
 
 What we have in addition to that vision is the kind of team that endures, that grinds through persistent interruptions to its own apparent ideal of free-flowing football in the first half to emerge ascendant in the second. The ideal required the same kind of muscling into being ideals tend to, and this one will continue to demand it all season; but it's close enough to be visible. 
 
-[^a]: ![](/ninety-plus-of-blue/images/2015-03-08-ouch.gif)
+[^a]: ![](/images/2015-03-08-ouch.gif)
 
-[^1]: In this first post I'll be too polite to say "Absolute bullshittery." <br> ![](/ninety-plus-of-blue/images/2015-03-08-contingency.gif)
+[^1]: In this first post I'll be too polite to say "Absolute bullshittery." <br> ![](/images/2015-03-08-contingency.gif)
 
 [^2]: Note: not his mustache; that would have been not contingency, but an expression of the divine.
