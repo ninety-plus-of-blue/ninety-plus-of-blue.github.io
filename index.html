@@ -13,7 +13,7 @@ title: Home
       {% for post in paginator.posts %}
       <div class="post">
         <h1 class="post-title">
-          <a href="/{{ post.url }}">
+          <a href="{{ post.url }}">
             {{ post.title }}
           </a>
         
@@ -31,7 +31,7 @@ title: Home
 
        {{ post.content | split:'<!--break-->' | first }}
        {% if post.content contains '<!--break-->' %}
-          <a href="/{{ post.url }}">read more</a>
+          <a href="{{ post.url }}">read more</a>
        {% endif %}
       </div>
       {% endfor %}
