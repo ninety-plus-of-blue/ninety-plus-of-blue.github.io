@@ -11,8 +11,8 @@ relative_permalinks: true
 # Setup
 title:               Ninety-Plus of Blue
 tagline:             "an aesthete's guide to shouting in public"
-description:         "Call it an aesthete's football journal; call it a grad student's distraction. Call it a passionate defense of Adam Nemec (leave Nemec alone!). I call it bullshit."
-url:                 http://www.ninety-plus-of-blue.com
+description:         "Call it an aesthete's football journal; call it a grad student's distraction. I call it a passionate defense of Adam Nemec (leave Nemec alone!)."
+url:                 http://ninety-plus-of-blue.github.io
 
 # About/contact
 author:
