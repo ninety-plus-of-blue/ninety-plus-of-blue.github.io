@@ -22,3 +22,8 @@ author:
 
 # Custom vars
 version:             1.0.0
+
+# Pagination
+
+paginate: 5
+paginate_path: "/page:num"
