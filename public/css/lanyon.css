@@ -368,6 +368,18 @@ a.sidebar-nav-item:focus {
   margin-bottom: 4em;
 }
 
+.index-quote {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  width: auto;
+  max-width: 20rem;
+  line-height: .75rem;
+  font-size: .75rem;
+  font-family: "Arvo", Helvetica, Arial, sans-serif;
+  background-color: #E6E6E6;
+}
+
 .post img {
   margin-bottom: 1rem;
   width: 100%;
@@ -390,6 +402,11 @@ a.sidebar-nav-item:focus {
   margin-top: 0;
 }
 
+.post-title small {
+  font-size: 60%;
+  font-weight: bold;
+}
+
 .post-img-wrap {
   overflow: hidden;
   height: 10rem;
@@ -405,8 +422,9 @@ a.sidebar-nav-item:focus {
   margin-right: auto;
   margin-bottom: 1rem;
   width: 25rem;
-  line-height: 1.25rem;
+  line-height: .75rem;
   font-family: "Arvo", Helvetica, Arial, sans-serif;
+  font-size: .75rem;
   background-color: #E6E6E6;
 }
 

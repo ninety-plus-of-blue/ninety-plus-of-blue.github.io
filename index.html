@@ -29,11 +29,24 @@ title: Home
           </div>
         {% endif %}
 
+        {% if post.quote %}
+          <div class="index-quote">
+              {{ post.quote | split:'<!--break-->' | first }}
+              {% if post.content contains '<!--break-->' %}
+                <a href="{{ post.url }}">...</a>
+              {% endif %}
+            <div class="post-quote-author">
+              {{ post.text-author }}
+            </div>
+          </div>
+        {% endif %}
+
        {{ post.content | split:'<!--break-->' | first }}
        {% if post.content contains '<!--break-->' %}
           <a href="{{ post.url }}">read more</a>
        {% endif %}
       </div>
+
       {% endfor %}
     </div>
 

@@ -6,7 +6,7 @@ quote:
 |
   And we realize this only at a point where they lapse<br>
   Like a wave breaking on a rock, giving up<br>
-  Its shape in a gesture which expresses that shape.<br>
+  Its shape in a gesture which expresses that shape.<br><!--break-->
   The forms retain a strong measure of ideal beauty<br>
   As they forage in secret on our idea of distortion.<br>
   Why be unhappy with this arrangement, since<br>
