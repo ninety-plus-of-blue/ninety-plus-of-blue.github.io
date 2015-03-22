@@ -12,51 +12,40 @@ title: Home
     <div class="posts">
       {% for post in paginator.posts %}
       <div class="post">
+        <h1 class="post-title">
+          <a href="{{ post.url }}">
+            {{ post.title }}
+          </a>
+        
+          <small>
+            {{ post.text }}
+          </small>
+        </h1>
+        <span class="post-date">{{ post.date | date_to_string }}</span>
 
-        <div class="post-top">
-          <h1 class="post-title">
-            <a href="{{ post.url }}">
-              {{ post.title }}
-            </a>
-            <small>
-            {{ post.date | date_to_string }}
-            </small>
-          </h1>
-        </div>
-
-        <div class="post-left">
-
-          <div class="text-title">
-              {{ post.text }}
+        {% if post.image %}
+          <div class="post-img-wrap">
+            <img src="/images/{{ post.image }}">
           </div>
+        {% endif %}
 
-          {% if post.quote %}
-            <div class="index-quote">
-                {{ post.quote | split:'<!--break-->' | first }}
-                {% if post.content contains '<!--break-->' %}
-                  <a href="{{ post.url }}">...</a>
-                {% endif %}
-              <div class="post-quote-author">
-                {{ post.text-author }}
-              </div>
+        {% if post.quote %}
+          <div class="index-quote">
+              {{ post.quote | split:'<!--break-->' | first }}
+              {% if post.content contains '<!--break-->' %}
+                <a href="{{ post.url }}">...</a>
+              {% endif %}
+            <div class="post-quote-author">
+              {{ post.text-author }}
             </div>
-          {% endif %}
-        </div>
+          </div>
+        {% endif %}
 
-        <div class="post-right">
-          {% if post.image %}
-            <div class="post-img-wrap">
-              <img src="/images/{{ post.image }}">
-            </div>
-          {% endif %}
-
-         {{ post.content | split:'<!--break-->' | first }}
-         {% if post.content contains '<!--break-->' %}
-            <a href="{{ post.url }}">read more</a>
-         {% endif %}
-       </div>
+       {{ post.content | split:'<!--break-->' | first }}
+       {% if post.content contains '<!--break-->' %}
+          <a href="{{ post.url }}">read more</a>
+       {% endif %}
       </div>
-    
 
       {% endfor %}
     </div>

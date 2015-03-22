@@ -63,6 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 .wrap {
   position: relative;
   width: 100%;
+  margin-left: 5rem;
 }
 
 
@@ -74,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .mast-container {
   max-width: 34rem;
-  margin-left: 5rem;
+  margin-left: 1rem;
   margin-top: 1rem;
 }
 @media (min-width: 38em) {
@@ -103,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 56em) {
   .container {
-    max-width: 38rem;
+    max-width: 45rem;
   }
 }
 
@@ -111,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 400px) {
   .permabar {
-  background-color: #6AACDE;  }
+  background-color: transparent;  }
 }
 
 /* title badge */
@@ -129,8 +130,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .masthead {
   /*padding-top:    1rem;*/
-  padding-bottom: 1rem;
-  margin-bottom: 3rem;
   border-bottom: 1px solid #eee;
   position: relative;
 }
@@ -145,6 +144,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-width: 1px;
   border-bottom-color: #FD6D1E;
   border-bottom-style: solid;
+  margin-left: -5rem;
 }
 
 .masthead-title {
@@ -206,7 +206,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow-y: auto;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: .875rem; /* 15px */
-  color: rgba(255,255,255,.6);
+  color: #1C2C5D;
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
   z-index: 1;
@@ -380,9 +380,43 @@ a.sidebar-nav-item:focus {
  * page is wrapped in `.page` and is only used on the page layout.
  */
 
-.page,
-.post {
+.page {
+  margin-top: 4rem;
   margin-bottom: 4em;
+  margin-left: 7rem;
+  margin-right: auto;
+  max-width: 80%;
+  text-align: justify;
+}
+
+/* post-top, post-left and post-right for column layout */
+
+.post-top {
+  float: left;
+  clear: both;
+  width: 100%;
+  padding-left: 25%;
+  border-bottom-color: #1C2C5D;
+  border-bottom-style: solid;
+  border-bottom-width: 1px; 
+  padding-top: 3rem;
+}
+
+.post-left {
+  width: 25%;
+  float: left;
+  padding-right: 2.5%;
+  padding-top:   1rem;
+}
+
+.post-right {
+  padding-top: 1rem;
+  width: 72.5%;
+  float: left;
+  border-left-color: #1C2C5D;
+  border-left-style: solid;
+  border-left-width: 1px;
+  padding-left: 1rem;
 }
 
 .index-quote {
@@ -400,6 +434,11 @@ a.sidebar-nav-item:focus {
 .post img {
   margin-bottom: 1rem;
   width: 100%;
+}
+
+.footnotes {
+  font-size: .75rem;
+  line-height: 1rem;
 }
 
 .footnotes img {
@@ -452,6 +491,7 @@ a.sidebar-nav-item:focus {
 
 .text-title {
   margin-bottom: 1rem;
+  line-height: 1rem;
 }
 
 /* Meta data line below post title */
@@ -502,6 +542,7 @@ a.sidebar-nav-item:focus {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   color: #ccc;
   text-align: center;
+  clear: both;
 }
 
 /* Pagination items can be `span`s or `a`s */
