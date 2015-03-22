@@ -2,10 +2,3 @@
 
 Edith Wharton, House of Mirth
 
-'You look as if you wished the place in Hell,'<br>
-My friend said, 'judging from your fac.' 'Oh well,<br>
-I suppose it's not the place's fault,' I said.<br>
-<br>
-'Nothing, like something, happens anywhere.'
-
-Philip Larkin, "I Remember, I Remember"
