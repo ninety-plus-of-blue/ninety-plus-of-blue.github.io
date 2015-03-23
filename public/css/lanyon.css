@@ -63,9 +63,13 @@ h1, h2, h3, h4, h5, h6 {
 .wrap {
   position: relative;
   width: 100%;
-  margin-left: 5rem;
 }
 
+@media (min-width: 900px) {
+  .wrap {
+  margin-left: 5rem;    
+  }
+}
 
 /*
  * Container
@@ -99,12 +103,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 38em) {
   .container {
-    max-width: 32rem;
+    max-width: 38rem;
   }
 }
 @media (min-width: 56em) {
   .container {
     max-width: 45rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .post-left {
+    display: none;
   }
 }
 
@@ -383,10 +393,15 @@ a.sidebar-nav-item:focus {
 .page {
   margin-top: 4rem;
   margin-bottom: 4em;
-  margin-left: 7rem;
   margin-right: auto;
-  max-width: 80%;
   text-align: justify;
+}
+
+@media (min-width: 750px) {
+  .page {
+    margin-left: 7rem;
+    max-width: 80%;
+  }
 }
 
 /* post-top, post-left and post-right for column layout */
@@ -395,11 +410,16 @@ a.sidebar-nav-item:focus {
   float: left;
   clear: both;
   width: 100%;
-  padding-left: 32.5%;
   border-bottom-color: #1C2C5D;
   border-bottom-style: solid;
   border-bottom-width: 1px; 
   padding-top: 3rem;
+}
+
+@media (min-width: 400px) {
+  .post-top {
+    padding-left: 32.5%;
+  }
 }
 
 .post-left {
@@ -411,12 +431,18 @@ a.sidebar-nav-item:focus {
 
 .post-right {
   padding-top: 1rem;
-  width: 65%;
+
   float: left;
   border-left-color: #1C2C5D;
   border-left-style: solid;
   border-left-width: 1px;
   padding-left: 1rem;
+}
+
+@media (min-width: 400px) {
+  .post-right {
+    width: 65%; 
+  } 
 }
 
 .post-right p {
@@ -491,6 +517,7 @@ a.sidebar-nav-item:focus {
   font-family: "Arvo", Helvetica, Arial, sans-serif;
   font-size: .75rem;
   background-color: #E6E6E6;
+  max-width: 100%;
 }
 
 .post-quote-author {
