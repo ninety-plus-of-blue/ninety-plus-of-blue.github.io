@@ -27,7 +27,7 @@ All of this is the same as to ask whether in football, as in Larkin's view of li
 
 [^1]: Audio from the broadcast isn't readily available, but the announcer responds to the stunning miss by listing Villa's many and various achievements for Barcelona and Spain.
 
-[^2]: ![](/images/2015-03-21-villa1) ![](/images/2015-03-21-villa2)
+[^2]: ![](/images/2015-03-21-villa1.gif) ![](/images/2015-03-21-villa2.gif)
 
 [^3]: ![](/images/villa-curl.gif)
 
