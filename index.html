@@ -27,7 +27,8 @@ title: Home
         <div class="post-left">
 
           <div class="text-title">
-              {{ post.text }}
+                  {{ post.text }}<br>
+              <small>{{ post.text-author }}</small>
           </div>
 
           {% if post.quote %}
@@ -36,9 +37,6 @@ title: Home
                 {% if post.content contains '<!--break-->' %}
                   <a href="{{ post.url }}">...</a>
                 {% endif %}
-              <div class="post-quote-author">
-                {{ post.text-author }}
-              </div>
             </div>
           {% endif %}
         </div>

@@ -410,9 +410,9 @@ a.sidebar-nav-item:focus {
   float: left;
   clear: both;
   width: 100%;
-  border-bottom-color: #1C2C5D;
+  border-bottom-color: #eee;
   border-bottom-style: solid;
-  border-bottom-width: 1px; 
+  border-bottom-width: .1em; 
   padding-top: 3rem;
 }
 
@@ -427,6 +427,9 @@ a.sidebar-nav-item:focus {
   float: left;
   padding-right: 2.5%;
   padding-top:   1rem;
+  border-right-color: #eee;
+  border-right-style: solid;
+  border-right-width: .1em;
 }
 
 .post-right {
@@ -435,7 +438,7 @@ a.sidebar-nav-item:focus {
   float: left;
   border-left-color: #1C2C5D;
   border-left-style: solid;
-  border-left-width: 1px;
+  border-left-width: 0px;
   padding-left: 1rem;
 }
 
@@ -461,9 +464,15 @@ a.sidebar-nav-item:focus {
   width: auto;
   max-width: 20rem;
   line-height: .75rem;
-  font-size: .85vw;
+  font-size: .95vw;
   font-family: "Arvo", Helvetica, Arial, sans-serif;
   background-color: #E6E6E6;
+}
+
+@media (min-width: 1000px) {
+    .index-quote {
+            font-size: 10px;
+    }
 }
 
 .post img {
@@ -528,6 +537,12 @@ a.sidebar-nav-item:focus {
 .text-title {
   margin-bottom: 1rem;
   line-height: 1rem;
+}
+
+.text-title small {
+    padding-left: .5rem;
+    font-style: bold;
+    font-size: 75%;
 }
 
 /* Meta data line below post title */
