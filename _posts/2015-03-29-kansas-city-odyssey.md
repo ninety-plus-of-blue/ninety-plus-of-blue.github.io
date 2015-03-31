@@ -1,7 +1,8 @@
 ---
 layout: post
 title: NYCFC 0 - 1 Sporting Kansas City 
-opponent: 'Kansas' 
+tags: 
+  - Sporting Kansas City
 image: 2015-03-29-kansas.jpeg
 quote: |
   Dear friends,

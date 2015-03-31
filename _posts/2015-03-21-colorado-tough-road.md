@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Colorado Rapids 0 - 0 NYCFC 
-opponent: 'Colorado' 
+tags: 
+  - Colorado Rapids
 image: 2015-03-21-colorado.jpeg
 quote: |
   'You look as if you wished the place in Hell,'<br>

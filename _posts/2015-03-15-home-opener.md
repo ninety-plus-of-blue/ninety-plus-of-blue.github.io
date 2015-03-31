@@ -1,7 +1,8 @@
 ---
 layout: post
 title: NYCFC 2 - 0 NE Revolution
-opponent: 'New England' 
+tags: 
+  - New England Revolution
 image: 2015-03-15-new-england.jpeg
 quote: |
   "Americans, rightly or wrongly, are commended for the ease with which they adapt themselves to foreign conditions...."<br><br>

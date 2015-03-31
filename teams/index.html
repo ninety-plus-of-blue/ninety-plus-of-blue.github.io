@@ -10,6 +10,24 @@ title: Teams
     <div class="posts">
       <!-- pull posts for each team-->
 
+    {% assign teams_list = site.tags | sort %}
+    {% for node in teams_list %}
+      <h3>{{ node[0] }}</h3>
+        <ul>
+          {% for post in site.posts %}
+            {% if node[0] == post.tags[0] %}
+              <li>
+                  <small>{{ post.date | date_to_string }}</small>
+                  <a href="{{ post.url }}">
+                    {{ post.title }}<small>: {{ post.text }}</small>
+                  </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+    {% endfor %}
+
+<!-- old code
       <h3>Colorado Rapids</h3>
         <ul>
           {% for post in site.posts %}
@@ -72,6 +90,7 @@ title: Teams
     </div>
   </div>
 
+-->
 
 <!--
   <label for="sidebar-checkbox" class="sidebar-toggle"></label>

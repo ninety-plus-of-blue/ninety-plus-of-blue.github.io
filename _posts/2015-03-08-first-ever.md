@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Orlando City SC 1 - 1 NYCFC
-opponent: Orlando
+tags: 
+  - Orlando City SC
 image: 2015-03-08-orlando-city.jpeg
 quote: 
 |
