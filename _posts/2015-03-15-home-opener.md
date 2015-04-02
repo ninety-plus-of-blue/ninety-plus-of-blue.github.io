@@ -10,6 +10,8 @@ quote: |
   "'You should live in your own land;<!--break--> whatever it may be you have your natural place there. If we're not good Americans we're certainly poor Europeans; we've no natural place here. We're mere parasites, crawling over the surface; we haven't our feet in the soil. At least one can know it and not have illusions.'"
 text: The Portrait of a Lady
 text-author: Henry James
+categories:
+  - James, Henry
 ---
 
 I probably exemplify a certain demographic of NYCFC supporters. Before this season I attended sporting events very rarely, and usually half-ironically; I had never been to an MLS match before; the only time I had seen a professional-level football match at all (if you can even call it that) was a Greece vs. Bolivia friendly at Red Bull Stadium in an ersatz stag do.[^1] That is to say, passionate Bolivia supporters and their many flags were the only taste I'd had of fan atmosphere, and in that case I was distinctly not a part of it. I had no referent for the collective roars creeping into the TV stream but the account from Nick Hornby's (excellent) *Fever Pitch*.

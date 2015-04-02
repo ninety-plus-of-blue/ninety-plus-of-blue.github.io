@@ -17,6 +17,8 @@ quote:
   Out of the dream into its codification.<br>
 text: "Self-Portrait in a Convex Mirror"
 text-author: John Ashbery
+categories:
+  - Ashbery, John
 ---
 
 Very little survives the passage from concept to existence unscathed, but I think we've  about made it this time. It was enough of a strain to see the rosters filled out, adding some suddenly very real-sounding names from the benches of other MLS teams---names that, if you're like me, were largely anonymous but had a nice heft to them, plenty of, you know, consonants. Quite possibly, this tension is what lay beneath the outrage at the Lampard saga the whole time: more than ten thousand fans with an unarticulated fear that the team would be a fantasy or an elaborate con, looking that fear in the face and asking it some serious questions about its intentions with their daughter, how it takes its coffee, etc.

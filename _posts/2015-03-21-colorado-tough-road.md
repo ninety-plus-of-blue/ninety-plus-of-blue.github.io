@@ -12,6 +12,8 @@ quote: |
   'Nothing, like something, happens anywhere.'
 text: "I Remember, I Remember" 
 text-author: Philip Larkin 
+categories:
+  - Larkin, Philip
 ---
 
 The first of (you sort of have to imagine) many difficult games on the road---but I think there's reason to believe this one will have been the most difficult on the supporters. Even an NYCFC cynic expecting the team to fail would assume a glorious failure, a spectacular collapse. We're simply not equipped for ugly mediocrity. And except for the remarkable performance of Josh Saunders, from whom one almost expects it at this point, ugly mediocrity is what was on display in Colorado.

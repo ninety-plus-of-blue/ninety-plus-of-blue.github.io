@@ -1,0 +1,118 @@
+---
+layout: page
+title: Quotations
+---
+
+
+
+
+
+    <div class="posts">
+      <!-- pull posts for each team-->
+
+    {% assign authors_list = site.categories | sort %}
+    {% for node in authors_list %}
+      <h3>{{ node[0] | upcase }}</h3>
+        <ul>
+          {% for post in site.posts %}
+            {% if node[0] == post.categories[0] %}
+              <li>
+                  <small>{{ post.date | date_to_string }}:</small>
+                  <a href="{{ post.url }}">
+                   <small>{{ post.text }}</small>
+                  </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+    {% endfor %}
+
+
+<!-- old code
+      <h3>Colorado Rapids</h3>
+        <ul>
+          {% for post in site.posts %}
+            {% if post.opponent == 'Colorado' %}
+              <li>
+                  <small>{{ post.date | date_to_string }}</small>
+                  <a href="{{ post.url }}">
+                    {{ post.title }}<small>: {{ post.text }}</small>
+                  </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+
+      <h3>New England Revolution</h3>
+        <ul>
+          {% for post in site.posts %}
+            {% if post.opponent == 'New England' %}
+              <li>
+                  <small>{{ post.date | date_to_string }}</small>
+                  <a href="{{ post.url }}">
+                    {{ post.title }}<small>: {{ post.text }}</small>
+                  </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+
+      <h3>Orlando City SC</h3>
+        <ul>
+          {% for post in site.posts %}
+            {% if post.opponent == 'Orlando' %}
+              <li>
+                  <small>{{ post.date | date_to_string }}</small>
+                  <a href="{{ post.url }}">
+                    {{ post.title }}<small>: {{ post.text }}</small>
+                  </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+
+    </div>
+
+    <div class="pagination">
+      {% if paginator.next_page %}
+        <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
+      {% else %}
+        <span class="pagination-item older">Older</span>
+      {% endif %}
+      {% if paginator.previous_page %}
+        {% if paginator.page == 2 %}
+          <a class="pagination-item newer" href="/">Newer</a>
+        {% else %}
+          <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
+        {% endif %}
+      {% else %}
+        <span class="pagination-item newer">Newer</span>
+      {% endif %}
+    </div>
+  </div>
+
+-->
+
+<!--
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+<script>
+  (function(document) {
+    var toggle = document.querySelector('.sidebar-toggle');
+    var sidebar = document.querySelector('#sidebar');
+    var checkbox = document.querySelector('#sidebar-checkbox');
+
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+
+      if(!checkbox.checked ||
+         sidebar.contains(target) ||
+         (target === checkbox || target === toggle)) return;
+
+      checkbox.checked = false;
+    }, false);
+  })(document);
+</script>
+
+-->
+
