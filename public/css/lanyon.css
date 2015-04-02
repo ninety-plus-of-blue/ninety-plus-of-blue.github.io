@@ -187,6 +187,45 @@ h1, h2, h3, h4, h5, h6 {
   .masthead-title small {
     display: none;
   }
+
+  .mast-navbar-item {
+    text-align: center;
+  }
+}
+
+/* Masthead nav links */
+
+.mast-navbar-item {
+  display: block;
+}
+
+@media (min-width: 48em) {
+  .mast-navbar-item {
+    padding-left: 3rem;
+  }
+}
+
+.mast-navbar-item a:first-child {
+  border-left-style: dotted;
+  border-left-color: #C0C0C0;
+  border-left-width: 1px;
+  padding-left: .25rem;
+}
+
+.mast-navbar-item a {
+  color: #C0C0C0;
+  font-weight: 400;
+  font-size: .8rem;
+  padding-right: 1rem;
+  border-right-style: dotted;
+  border-right-color: #C0C0C0;
+  border-right-width: 1px;
+}
+
+.mast-navbar-item a:hover,
+.mast-navbar-item a:focus,.mast-navbar-item a.active {
+  text-decoration: none;
+  color: #6AACDE;
 }
 
 

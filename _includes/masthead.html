@@ -9,5 +9,16 @@
       <small>{{ site.tagline }}</small>
     </h3>
   </div>
-  
+
 </div>
+  <div class="mast-navbar-item">
+    {% assign pages_list = site.pages | sort:"url" %}
+    <a href="/">Home</a>
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if node.layout == "page" %}
+          <a {% if page.url == node.url %}class="active"{% endif %}href="{{ node.url }}">{{ node.title }}</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
