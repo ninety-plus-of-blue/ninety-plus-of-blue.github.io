@@ -27,7 +27,7 @@ The point, finally, is twofold. You could imagine an ideal management, guarantee
 
 [^1]: ![Side-by-side photo of Kirk Douglas and Jason Kreis](/images/kreisacus.png)
 
-[^2]: Ballouchy; privileging of experience and specifically MLS experience; why not kwame sooner?
+[^2]: I guess I just mean Ballouchy. I sometimes wonder about his privileging of experience to such an extent, and specifically his privileging of MLS experience. 
 
 [^3]: The part I'm referring to here, I think the most famous part (what the hell do I know), is that to "create a measurement, an interaction with the particle must occur that will alter it's other variables." This is taken from the UC Davis Chemistry wiki, [here](http://chemwiki.ucdavis.edu/Physical_Chemistry/Quantum_Mechanics/02._Fundamental_Concepts_of_Quantum_Mechanics/Heisenberg%27s_Uncertainty_Principle). 
 
