@@ -275,12 +275,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #philtwit {
   position: fixed;
-  margin-top: 2rem;
-  margin-left: .2rem;
+  top: 4rem;
+  margin-left: .35rem;
 }
 
 #philtwit a img {
-  width: 2rem;
+  width: 1.5rem;
   height: auto;
 }
 
