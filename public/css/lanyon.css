@@ -45,7 +45,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
   font-weight: 400;
   color: #313131;
   letter-spacing: -.025rem;
@@ -259,7 +259,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0rem;
   width: 3rem;
   overflow-y: auto;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
   font-size: .875rem; /* 15px */
   color: #1C2C5D;
   -webkit-transition: all .3s ease-in-out;
@@ -293,7 +293,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 14rem;
   visibility: hidden;
   overflow-y: auto;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
   font-size: .875rem; /* 15px */
   color: rgba(255,255,255,.6);
   background-color: #1C2C5D;
@@ -521,7 +521,7 @@ a.sidebar-nav-item:focus {
   max-width: 20rem;
   line-height: .75rem;
   font-size: .95vw;
-  font-family: "Arvo", Helvetica, Arial, sans-serif;
+  font-family: "Droid Serif", Helvetica, Arial, sans-serif;
   background-color: #E6E6E6;
 }
 
@@ -579,7 +579,7 @@ a.sidebar-nav-item:focus {
   margin-bottom: 1rem;
   width: 25rem;
   line-height: .75rem;
-  font-family: "Arvo", Helvetica, Arial, sans-serif;
+  font-family: "Droid Serif", Helvetica, Arial, sans-serif;
   font-size: .75rem;
   background-color: #E6E6E6;
   max-width: 100%;

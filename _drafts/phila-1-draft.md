@@ -3,7 +3,7 @@ layout: post
 title: Philadelphia Union 2 - 1 NYCFC 
 tags: 
   - Philadelphia Union 
-image: 2015-04-11-philadelphia.jpeg
+image: Edith_football_Wharton_crop2.jpeg
 quote: |
   "Ah, but I don't suppose that: haven't I told you that your genius lies in converting impulses into intentions?"<br>
   &nbsp;&nbsp;&nbsp;&nbsp;"My genius?" she echoed with a sudden note of weariness. "Is there any final test of genius but success? And I certainly haven't succeeded."<br><!--break-->
