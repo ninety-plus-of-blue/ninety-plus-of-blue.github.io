@@ -51,6 +51,10 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -.025rem;
 }
 
+h1 small {
+  color: #9a9a9a;
+  margin-left: 1rem;
+}
 
 /*
  * Wrapper
@@ -519,7 +523,7 @@ a.sidebar-nav-item:focus {
   margin-bottom: 1rem;
   width: auto;
   max-width: 20rem;
-  line-height: .75rem;
+  line-height: .9rem;
   font-size: .95vw;
   font-family: "Droid Serif", Helvetica, Arial, sans-serif;
   background-color: #E6E6E6;
@@ -565,7 +569,7 @@ a.sidebar-nav-item:focus {
 
 .post-img-wrap {
   overflow: hidden;
-  height: 10rem;
+  max-height: 15rem;
   margin-bottom: 2rem;
 }
 
@@ -578,10 +582,10 @@ a.sidebar-nav-item:focus {
   margin-right: auto;
   margin-bottom: 1rem;
   width: 25rem;
-  line-height: .75rem;
+  line-height: .9rem;
   font-family: "Droid Serif", Helvetica, Arial, sans-serif;
   font-size: .75rem;
-  background-color: #E6E6E6;
+  /*background-color: #E6E6E6;*/
   max-width: 100%;
 }
 

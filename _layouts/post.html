@@ -12,10 +12,7 @@ layout: default
 
   <div class="post">
     
-    <h1 class="post-title">{{ page.title }}</h1>
-    <div class="text-title">
-      <small>{{ page.text }}</small>
-    </div>
+    <h1 class="post-title">{{ page.title }}: {{ page.text }}</h1>
     <span class="post-date">{{ page.date | date_to_string }}</span>
 
     <img src="/images/{{page.image}}">
@@ -23,7 +20,7 @@ layout: default
     <div class="post-quote">
       {{ page.quote }}
       <div class="post-quote-author">
-        --{{ page.text-author }}
+        &#8212; {{ page.text-author }}, {{ page.text }}
       </div>
     </div>
 
