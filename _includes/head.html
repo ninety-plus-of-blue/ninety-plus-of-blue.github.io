@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:description" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.description }}">
   <meta name="twitter:image" content="http://www.ninetyplusofblue.com/images/{% if page.title == "Home" %}{{ paginator.posts[0].image }}{% else %}{{ page.image }}{% endif %}">
   <meta name="twitter:title" content="Ninety-Plus of Blue">
 
@@ -13,9 +13,9 @@
 
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
+      {{ site.title }} &middot; {{ site.description }}
     {% else %}
-      {{ page.title }} &middot; {{ site.title }}
+      {{ page.title }} &middot; {{ site.description }}
     {% endif %}
   </title>
 
