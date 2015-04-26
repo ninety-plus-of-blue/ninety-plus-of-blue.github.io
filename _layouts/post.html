@@ -17,10 +17,11 @@ layout: default
 
     <img src="/images/{{page.image}}">
 
-    <div class="post-quote">
+    <div class="post-quote{% if page.form == 'poetry' %} poetry{% endif %}">
       {{ page.quote }}
-      <div class="post-quote-author">
-        &#8212; {{ page.text-author }}, {{ page.text }}
+      <div class="post-quote-author"{% if page.form == 'poetry' %} style="text-align: left"{% endif %}>
+        <br>
+        &#8212; {{ page.text-author }}{% if page.form != 'poetry' %}, {{ page.text }}{% endif %}
       </div>
     </div>
 

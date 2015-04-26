@@ -11,7 +11,7 @@ quote: |
   ...<br>
   <br>
   Only one thought consoled her, and that was the contemplation of Lily's beauty. She studied it with a kind of passion, as though it were some weapon she had slowly fashioned for her vengeance. ...but Lily understood that beauty is only the raw material of conquest, and that to convert it into success other arts are required.
-text: The House of Mirth 
+text: <i>The House of Mirth</i> 
 text-author: Edith Wharton 
 categories:
   - Wharton, Edith

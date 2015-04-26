@@ -32,7 +32,7 @@ title: Home
           </div>
 
           {% if post.quote %}
-            <div class="index-quote">
+            <div class="index-quote{% if post.form == 'poetry' %} poetry{% endif %}">
                 {{ post.quote | split:'<!--break-->' | first }}
                 {% if post.content contains '<!--break-->' %}
                   <a href="{% if post.external_link %}{{ post.external_link }}{% else %}{{ post.url }}{% endif %}">...</a>

@@ -42,6 +42,8 @@ body {
 
 html {
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  font-size: 1.5vw;
+  line-height: 2vw;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -102,9 +104,12 @@ h1 small {
   }
 }
 
+
 .container {
-  max-width: 28rem;
+  max-width: 80%;
 }
+
+/*
 @media (min-width: 38em) {
   .container {
     max-width: 38rem;
@@ -115,6 +120,7 @@ h1 small {
     max-width: 45rem;
   }
 }
+*/
 
 @media (max-width: 400px) {
   .post-left {
@@ -492,6 +498,7 @@ a.sidebar-nav-item:focus {
   border-right-color: #eee;
   border-right-style: solid;
   border-right-width: .1em;
+  overflow: scroll;
 }
 
 .post-right {
@@ -511,8 +518,8 @@ a.sidebar-nav-item:focus {
 }
 
 .post-right p {
-  font-size: .75rem;
-  line-height: 1rem;
+  font-size: 1.4vw;
+  line-height: 1.75vw;
 }
 
 .post-right p sup {
@@ -523,18 +530,20 @@ a.sidebar-nav-item:focus {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
-  width: auto;
   max-width: 20rem;
-  line-height: .9rem;
-  font-size: .95vw;
+  line-height: 1.4vw;
+  font-size: 1.1vw;
   font-family: "Droid Serif", Helvetica, Arial, sans-serif;
   background-color: #E6E6E6;
+  padding: 1em;
 }
 
-@media (min-width: 1000px) {
-    .index-quote {
-            font-size: 10px;
-    }
+.index-quote.poetry {
+  white-space: nowrap;
+  overflow: scroll;
+  font-size: 1vw;
+  display: inline-block;
+  max-width: 100%;
 }
 
 .post img {
@@ -583,12 +592,26 @@ a.sidebar-nav-item:focus {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
-  width: 25rem;
+  width: 60%;
   line-height: .9rem;
   font-family: "Droid Serif", Helvetica, Arial, sans-serif;
-  font-size: .75rem;
+  font-size: 1rem;
   /*background-color: #E6E6E6;*/
   max-width: 100%;
+}
+
+.post-quote.poetry {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  width: 40%;
+  line-height: 1.3vw;
+  font-family: "Droid Serif", Helvetica, Arial, sans-serif;
+  font-size: 1vw;
+  /*background-color: #E6E6E6;*/
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: auto;
 }
 
 .post-quote-author {

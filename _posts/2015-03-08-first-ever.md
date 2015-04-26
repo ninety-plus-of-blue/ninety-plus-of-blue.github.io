@@ -19,6 +19,7 @@ text: "Self-Portrait in a Convex Mirror"
 text-author: John Ashbery
 categories:
   - Ashbery, John
+form: poetry
 ---
 
 Very little makes it from concept to existence intact, but I think we've  about made it this time. It was enough of a strain to see the rosters filled out, adding some suddenly very real-sounding names from the benches of other MLS teams. Names that, if you're like me, were largely anonymous but had a nice heft to them. Plenty of---you know. Consonants. 

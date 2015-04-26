@@ -8,7 +8,7 @@ quote: |
   "Americans, rightly or wrongly, are commended for the ease with which they adapt themselves to foreign conditions...."<br><br>
 
   "'You should live in your own land;<!--break--> whatever it may be you have your natural place there. If we're not good Americans we're certainly poor Europeans; we've no natural place here. We're mere parasites, crawling over the surface; we haven't our feet in the soil. At least one can know it and not have illusions.'"
-text: The Portrait of a Lady
+text: <i>The Portrait of a Lady</i>
 text-author: Henry James
 categories:
   - James, Henry

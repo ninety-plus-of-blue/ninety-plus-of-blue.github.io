@@ -15,6 +15,7 @@ text: The Odyssey
 text-author: Homer 
 categories: 
   - Homer
+form: poetry
 ---
 
 Just hold on: this is not pessimism. Odysseus knows what's coming for him and his crew, more or less, and even though that means sirens, Scylla and Charybdis, he still *guides them through* it all. And take another look at the passage. The value of the prophecy is not that it guides what they do---instrumentally, it's quite useless. The forecast alters only the state of their knowledge about what is going to happen, not the events. It is not even a comfort. The one thing Odysseus is able to do as a result of the knowledge, ordering the crew's famous plugging-of-the-ears against the Sirens' song and his own orders, creates the conditions for even more knowledge that cannot be made into action.<!--break--> Odysseus is able to gather data, but he is unable to do anything but hold the course set at the beginning. The forecast remains pure, a structure of knowledge that *will be* without the extra variables that come from acting on foreknowledge---is a forecast correct if action is taken to alter it? and so forth. No: there's a tension between knowledge and action that, before Heisenberg and his uncertainty principle,[^3]  you would have to look for in prophecy. Most contemporary versions of common sense would suggest that you should have as much information as possible and react to it as quickly, and as fully, as possible. Odysseus's episode with the sirens suggests an alternative model.
