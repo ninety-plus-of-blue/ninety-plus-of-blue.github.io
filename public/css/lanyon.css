@@ -296,6 +296,13 @@ h1 small {
   height: auto;
 }
 
+#philfb {
+  position: fixed;
+  top: 8rem;
+  margin-left: .35rem;
+  width: 1.5rem;
+}
+
 /* Style and "hide" the sidebar */
 .sidebar {
   position: fixed;
