@@ -58,6 +58,14 @@ h1 small {
   margin-left: 1rem;
 }
 
+hr {
+  border-top: 2px solid #515151;
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
 /*
  * Wrapper
  *
@@ -645,7 +653,7 @@ a.sidebar-nav-item:focus {
 
 .post-img-wrap {
   overflow: hidden;
-  max-height: 15rem;
+  max-height: 20rem;
   margin-bottom: 2rem;
 }
 
@@ -689,8 +697,8 @@ a.sidebar-nav-item:focus {
     font-size: 1vw;  
   }
   .post-quote {
-    line-height: .9rem;
-    font-size: 1rem;
+    line-height: 1.2rem;
+    font-size: .8rem;
     width: 60%;
   }
 }
