@@ -5,7 +5,7 @@
   <meta name="twitter:site" content="@90PlusOfBlue"/>
   <meta name="twitter:creator:id" content="@90PlusOfBlue"/>
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:description" content="{% if page.title == "Home" %}Aesthetic football meets literary aesthetics.{% else %}{{ page.content | strip_html | truncatewords: 20 }}...{% endif %}"/>
+  <meta name="twitter:description" content="{% if page.title == "Home" %}Aesthetic football meets literary aesthetics.{% elsif page.post_description %}{{ page.post_description }}{% else %}{{ page.content | strip_html | truncatewords: 20 }}...{% endif %}"/>
   <meta name="twitter:image" content="http://ninetyplusofblue.com/images/{% if page.title == "Home" %}{{ paginator.posts[0].image }}{% else %}{{ page.image }}{% endif %}"/>
   <meta name="twitter:title" content="Ninety-Plus of Blue"/>
   <meta name="og:url" content="http://ninetyplusofblue.com{{ page.url }}"/>
@@ -20,9 +20,9 @@
 
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.description }}
+      {{ site.title }} &middot; aesthetic football meets literary aesthetics
     {% else %}
-      {{ page.title }} &middot; {{ site.description }}
+      {{ page.title }} &middot; {{ page.score }}
     {% endif %}
   </title>
 
