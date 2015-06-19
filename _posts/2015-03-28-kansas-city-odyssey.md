@@ -1,6 +1,7 @@
 ---
 layout: post
-title: NYCFC 0 - 1 Sporting Kansas City 
+title: Binding Kreis to the Mast
+score: NYCFC 0 - 1 Sporting Kansas City 
 tags: 
   - Sporting Kansas City
 image: 2015-03-29-kansas.jpeg

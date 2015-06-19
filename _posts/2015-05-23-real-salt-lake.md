@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Real Salt Lake 2 - 0 NYCFC
+title: Waterfall
+score: Real Salt Lake 2 - 0 NYCFC
 tags: 
   - Real Salt Lake
 image: 2015-05-23-real-salt-lake.jpg

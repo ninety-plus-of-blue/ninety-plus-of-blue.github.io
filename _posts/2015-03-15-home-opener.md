@@ -1,6 +1,7 @@
 ---
 layout: post
-title: NYCFC 2 - 0 NE Revolution
+title: '"Natural Place": On Forging a Hybrid Culture'
+score: NYCFC 2 - 0 NE Revolution
 tags: 
   - New England Revolution
 image: 2015-03-15-new-england.jpeg

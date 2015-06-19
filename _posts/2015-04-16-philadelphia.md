@@ -1,6 +1,7 @@
 ---
 layout: post
-title: NYCFC 1 - 1 Philadelphia Union
+title: What We Talk About When We Talk About Evolution
+score: NYCFC 1 - 1 Philadelphia Union
 tags: 
   - Philadelphia Union 
 image: 2015-04-16-philadelphia.jpg

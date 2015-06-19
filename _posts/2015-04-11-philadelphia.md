@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Philadelphia Union 2 - 1 NYCFC 
+title: Impulse, Intention, Beauty
+score: Philadelphia Union 2 - 1 NYCFC 
 tags: 
   - Philadelphia Union 
 image: Edith_football_Wharton_crop2.jpeg

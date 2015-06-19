@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Orlando City SC 1 - 1 NYCFC
+title: '"Self-Portrait in a Convex Mirror": The Beginning'
+score: Orlando City SC 1 - 1 NYCFC
 tags: 
   - Orlando City SC
 image: 2015-03-08-orlando-city.jpeg

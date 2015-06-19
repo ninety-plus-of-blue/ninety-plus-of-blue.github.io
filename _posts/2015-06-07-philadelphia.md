@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Philadelphia Union 1 - 2 NYCFC
+title: Barbaric Yawp
+score: Philadelphia Union 1 - 2 NYCFC
 tags: 
   - Philadelphia Union
 image: 2015-06-07-philadelphia.jpg
