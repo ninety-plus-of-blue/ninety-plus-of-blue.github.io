@@ -2,7 +2,7 @@ import tweepy
 import csv
 
 #csv writers
-f = open('tweet_coordinates.csv','w') 
+f = open('tweet_coordinates_rbny.csv','w') 
 csv_writer = csv.writer(f)
 csv_writer.writerow(['id','tweet','coordinates'])
 
@@ -20,10 +20,10 @@ geo_dict = {}
 coordinates_dict = {}
 place_dict = {}
 
-for x,n in enumerate(tweepy.Cursor(api.search,q='#winnycfc',
+for x,n in enumerate(tweepy.Cursor(api.search,q='#winrbny',
                     since="2015-06-24",
                     lang="en").items()):
-    if x > 500:
+    if x > 5000:
         break
     else:
     #print x,n.text.encode('utf-8')
@@ -34,12 +34,11 @@ for x,n in enumerate(tweepy.Cursor(api.search,q='#winnycfc',
             place_dict[x] = [n.text.encode('utf-8'),n.place.bounding_box.coordinates[0]]
             print place_dict[x]
         try:
-            location_dict[x] = [n.author._json['location']]
+            location_dict[x] = [n.author._json['location']
         except:
             pass
 
 print location_dict.items()
-
 print place_dict.items()
 
 with open('kartograph-test/world.json','a') as f:

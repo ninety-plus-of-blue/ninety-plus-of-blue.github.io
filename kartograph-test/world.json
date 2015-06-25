@@ -1,0 +1,22 @@
+{
+    "layers": {
+        "basemap": {
+            "src": "nybb.shp"
+        },
+        "tweets-rbny": {
+            "src": "rbny_tweets.shp"
+        }
+    },
+
+    "bounds": {
+        "mode": "points",
+        "data": [[-74.5, 40.3],[-73.4,41.2]]
+    },
+    
+    "proj": {
+        "id": "satellite",
+        "lon0":-74,
+        "lat0": "auto"
+    }
+
+}

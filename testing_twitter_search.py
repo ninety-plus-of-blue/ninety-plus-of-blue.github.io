@@ -2,9 +2,9 @@ import tweepy
 import csv
 
 #csv writers
-f = open('tweet_coordinates.csv','w') 
-csv_writer = csv.writer(f)
-csv_writer.writerow(['id','tweet','coordinates'])
+#f = open('tweet_coordinates.csv','w') 
+#csv_writer = csv.writer(f)
+#csv_writer.writerow(['id','tweet','coordinates'])
 
 #enter the corresponding information from your Twitter application:
 CONSUMER_KEY = 'BvkxtoSU9qNK4s3nncattaRZM'#keep the quotes, replace this with your consumer key
@@ -23,25 +23,26 @@ place_dict = {}
 for x,n in enumerate(tweepy.Cursor(api.search,q='#winnycfc',
                     since="2015-06-24",
                     lang="en").items()):
-    if x > 500:
+    if x > 10:
         break
     else:
+        '''
     #print x,n.text.encode('utf-8')
         tweet_count = x
-        print tweet_count
+        #print tweet_count
         if n.place != None:
             #print x, n.text.encode('utf-8'), n.place.bounding_box.coordinates
             place_dict[x] = [n.text.encode('utf-8'),n.place.bounding_box.coordinates[0]]
-            print place_dict[x]
-        try:
-            location_dict[x] = [n.author._json['location']]
-        except:
-            pass
+            #print "place",place_dict[x]
+        if n.geo != None:
+            geo_dict[x] = [n.geo]
+            print "geo",geo_dict[x]
+        '''
+        print n.author._json['location']
 
-print location_dict.items()
-
-print place_dict.items()
-
+#print place_dict.items()
+     
+'''
 with open('kartograph-test/world.json','a') as f:
     for thing in place_dict.items():
         text = thing[1][0]
@@ -53,7 +54,7 @@ with open('kartograph-test/world.json','a') as f:
 #for place in place_dict['coordinates']:
     #lat0 = place[0][0][0]
     #lon0 = place[0][0][1]
-
+'''
 '''    if not location_dict[n.location]:
         location_dict[n.location] = 1
     else:
@@ -76,4 +77,4 @@ with open('kartograph-test/world.json','a') as f:
         #print n.id,n.text
 '''
 
-f.close()
+#f.close()
