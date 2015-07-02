@@ -23,7 +23,7 @@ place_dict = {}
 for x,n in enumerate(tweepy.Cursor(api.search,q='#winnycfc',
                     since="2015-06-24",
                     lang="en").items()):
-    if x > 500:
+    if x > 5000:
         break
     else:
     #print x,n.text.encode('utf-8')
