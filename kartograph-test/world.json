@@ -1,22 +1,35 @@
 {
+    "proj": {
+            "id": "lonlat",
+            "lon0": -77.0,
+            "lat0": "auto"
+    },
+    
     "layers": {
         "basemap": {
-            "src": "nybb.shp"
+            "src": "/home/prpole/map_data/ne_10m_admin_1_states_provinces.shp"
+        },
+        "maplines": {
+            "src": "/home/prpole/map_data/ne_10m_admin_1_states_provinces_lines.shp"
+        },
+        "tweets": {
+            "src": "tweets.shp"
         },
         "tweets-rbny": {
             "src": "rbny_tweets.shp"
+        }, 
+        "userlocs": {
+            "src": "userloc.shp"
         }
     },
 
     "bounds": {
-        "mode": "points",
-        "data": [[-74.5, 40.3],[-73.4,41.2]]
+        "mode": "bbox",
+        "data": [-74.5, 39,-73.4,43]
     },
-    
-    "proj": {
-        "id": "satellite",
-        "lon0":-74,
-        "lat0": "auto"
+
+    "export": {
+       "width": 3000
     }
 
 }

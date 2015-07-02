@@ -1,4 +1,16 @@
 #tweets-rbny {
-    fill: red;
-    opacity: .1;
+    fill: "rgba(255, 0, 0, 0.1)";
+}
+
+#tweets {
+    fill: "rgba(0,0,255,0.1)";
+}
+
+#maplines {
+    stroke: gray;
+    stroke-width: 1;
+}
+
+#basemap {
+    fill: "rgba(255,229,204,1)";
 }
