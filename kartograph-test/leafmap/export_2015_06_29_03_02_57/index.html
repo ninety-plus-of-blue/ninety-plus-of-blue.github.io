@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>NY Soccer - Red vs. Blue</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+		<link rel="stylesheet" type="text/css" href="css/own_style.css">
+		<link rel="stylesheet" href="css/label.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+		<script src="js/leaflet-hash.js"></script>
+		<script src="js/label.js"></script>
+		<script src="js/Autolinker.min.js"></script>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	</head>
+	<body>
+		<div id="map"></div>
+		<input id="slide" type="range" min="0" max="1" step="0.1" value="1" onchange="updateOpacity(this.value)">
+		<script src="data/exp_blueboxes.js"></script>
+		<script src="data/exp_redboxes.js"></script>
+		<script src="data/exp_ne10madmin1statesprovinces.js"></script>
+		<script>
+		var map = L.map('map', {
+			zoomControl:true, maxZoom:19
+		}).fitBounds([[0.000345637937862,-0.000683421835514],[0.000400630401107,-0.000596447526574]]);
+		var hash = new L.Hash(map);
+		var additional_attrib = 'created w. <a href="https://github.com/geolicious/qgis2leaf" target ="_blank">qgis2leaf</a> by <a href="http://www.geolicious.de" target ="_blank">Geolicious</a> & contributors<br>';
+		var feature_group = new L.featureGroup([]);
+		var raster_group = new L.LayerGroup([]);
+		var basemap_0 = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
+			attribution: additional_attrib + '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
+		});	
+		basemap_0.addTo(map);	
+		var layerOrder=new Array();
+		function pop_ne10madmin1statesprovinces(feature, layer) {					
+			var popupContent = '<table><tr><th scope="row">adm1_code</th><td>' + Autolinker.link(String(feature.properties['adm1_code'])) + '</td></tr><tr><th scope="row">OBJECTID_1</th><td>' + Autolinker.link(String(feature.properties['OBJECTID_1'])) + '</td></tr><tr><th scope="row">diss_me</th><td>' + Autolinker.link(String(feature.properties['diss_me'])) + '</td></tr><tr><th scope="row">adm1_cod_1</th><td>' + Autolinker.link(String(feature.properties['adm1_cod_1'])) + '</td></tr><tr><th scope="row">iso_3166_2</th><td>' + Autolinker.link(String(feature.properties['iso_3166_2'])) + '</td></tr><tr><th scope="row">wikipedia</th><td>' + Autolinker.link(String(feature.properties['wikipedia'])) + '</td></tr><tr><th scope="row">iso_a2</th><td>' + Autolinker.link(String(feature.properties['iso_a2'])) + '</td></tr><tr><th scope="row">adm0_sr</th><td>' + Autolinker.link(String(feature.properties['adm0_sr'])) + '</td></tr><tr><th scope="row">name</th><td>' + Autolinker.link(String(feature.properties['name'])) + '</td></tr><tr><th scope="row">name_alt</th><td>' + Autolinker.link(String(feature.properties['name_alt'])) + '</td></tr><tr><th scope="row">name_local</th><td>' + Autolinker.link(String(feature.properties['name_local'])) + '</td></tr><tr><th scope="row">type</th><td>' + Autolinker.link(String(feature.properties['type'])) + '</td></tr><tr><th scope="row">type_en</th><td>' + Autolinker.link(String(feature.properties['type_en'])) + '</td></tr><tr><th scope="row">code_local</th><td>' + Autolinker.link(String(feature.properties['code_local'])) + '</td></tr><tr><th scope="row">code_hasc</th><td>' + Autolinker.link(String(feature.properties['code_hasc'])) + '</td></tr><tr><th scope="row">note</th><td>' + Autolinker.link(String(feature.properties['note'])) + '</td></tr><tr><th scope="row">hasc_maybe</th><td>' + Autolinker.link(String(feature.properties['hasc_maybe'])) + '</td></tr><tr><th scope="row">region</th><td>' + Autolinker.link(String(feature.properties['region'])) + '</td></tr><tr><th scope="row">region_cod</th><td>' + Autolinker.link(String(feature.properties['region_cod'])) + '</td></tr><tr><th scope="row">provnum_ne</th><td>' + Autolinker.link(String(feature.properties['provnum_ne'])) + '</td></tr><tr><th scope="row">gadm_level</th><td>' + Autolinker.link(String(feature.properties['gadm_level'])) + '</td></tr><tr><th scope="row">check_me</th><td>' + Autolinker.link(String(feature.properties['check_me'])) + '</td></tr><tr><th scope="row">scalerank</th><td>' + Autolinker.link(String(feature.properties['scalerank'])) + '</td></tr><tr><th scope="row">datarank</th><td>' + Autolinker.link(String(feature.properties['datarank'])) + '</td></tr><tr><th scope="row">abbrev</th><td>' + Autolinker.link(String(feature.properties['abbrev'])) + '</td></tr><tr><th scope="row">postal</th><td>' + Autolinker.link(String(feature.properties['postal'])) + '</td></tr><tr><th scope="row">area_sqkm</th><td>' + Autolinker.link(String(feature.properties['area_sqkm'])) + '</td></tr><tr><th scope="row">sameascity</th><td>' + Autolinker.link(String(feature.properties['sameascity'])) + '</td></tr><tr><th scope="row">labelrank</th><td>' + Autolinker.link(String(feature.properties['labelrank'])) + '</td></tr><tr><th scope="row">featurecla</th><td>' + Autolinker.link(String(feature.properties['featurecla'])) + '</td></tr><tr><th scope="row">name_len</th><td>' + Autolinker.link(String(feature.properties['name_len'])) + '</td></tr><tr><th scope="row">mapcolor9</th><td>' + Autolinker.link(String(feature.properties['mapcolor9'])) + '</td></tr><tr><th scope="row">mapcolor13</th><td>' + Autolinker.link(String(feature.properties['mapcolor13'])) + '</td></tr><tr><th scope="row">fips</th><td>' + Autolinker.link(String(feature.properties['fips'])) + '</td></tr><tr><th scope="row">fips_alt</th><td>' + Autolinker.link(String(feature.properties['fips_alt'])) + '</td></tr><tr><th scope="row">woe_id</th><td>' + Autolinker.link(String(feature.properties['woe_id'])) + '</td></tr><tr><th scope="row">woe_label</th><td>' + Autolinker.link(String(feature.properties['woe_label'])) + '</td></tr><tr><th scope="row">woe_name</th><td>' + Autolinker.link(String(feature.properties['woe_name'])) + '</td></tr><tr><th scope="row">latitude</th><td>' + Autolinker.link(String(feature.properties['latitude'])) + '</td></tr><tr><th scope="row">longitude</th><td>' + Autolinker.link(String(feature.properties['longitude'])) + '</td></tr><tr><th scope="row">sov_a3</th><td>' + Autolinker.link(String(feature.properties['sov_a3'])) + '</td></tr><tr><th scope="row">adm0_a3</th><td>' + Autolinker.link(String(feature.properties['adm0_a3'])) + '</td></tr><tr><th scope="row">adm0_label</th><td>' + Autolinker.link(String(feature.properties['adm0_label'])) + '</td></tr><tr><th scope="row">admin</th><td>' + Autolinker.link(String(feature.properties['admin'])) + '</td></tr><tr><th scope="row">geonunit</th><td>' + Autolinker.link(String(feature.properties['geonunit'])) + '</td></tr><tr><th scope="row">gu_a3</th><td>' + Autolinker.link(String(feature.properties['gu_a3'])) + '</td></tr><tr><th scope="row">gn_id</th><td>' + Autolinker.link(String(feature.properties['gn_id'])) + '</td></tr><tr><th scope="row">gn_name</th><td>' + Autolinker.link(String(feature.properties['gn_name'])) + '</td></tr><tr><th scope="row">gns_id</th><td>' + Autolinker.link(String(feature.properties['gns_id'])) + '</td></tr><tr><th scope="row">gns_name</th><td>' + Autolinker.link(String(feature.properties['gns_name'])) + '</td></tr><tr><th scope="row">gn_level</th><td>' + Autolinker.link(String(feature.properties['gn_level'])) + '</td></tr><tr><th scope="row">gn_region</th><td>' + Autolinker.link(String(feature.properties['gn_region'])) + '</td></tr><tr><th scope="row">gn_a1_code</th><td>' + Autolinker.link(String(feature.properties['gn_a1_code'])) + '</td></tr><tr><th scope="row">region_sub</th><td>' + Autolinker.link(String(feature.properties['region_sub'])) + '</td></tr><tr><th scope="row">sub_code</th><td>' + Autolinker.link(String(feature.properties['sub_code'])) + '</td></tr><tr><th scope="row">gns_level</th><td>' + Autolinker.link(String(feature.properties['gns_level'])) + '</td></tr><tr><th scope="row">gns_lang</th><td>' + Autolinker.link(String(feature.properties['gns_lang'])) + '</td></tr><tr><th scope="row">gns_adm1</th><td>' + Autolinker.link(String(feature.properties['gns_adm1'])) + '</td></tr><tr><th scope="row">gns_region</th><td>' + Autolinker.link(String(feature.properties['gns_region'])) + '</td></tr></table>';
+			layer.bindPopup(popupContent);
+		}
+
+		function doStylene10madmin1statesprovinces(feature) {
+				return {
+					color: '#afb38a',
+					fillColor: '#f1f4c7',
+					weight: 1.3,
+					dashArray: '',
+					opacity: 1.0,
+					fillOpacity: 1.0
+				};
+
+		}
+		var exp_ne10madmin1statesprovincesJSON = new L.geoJson(exp_ne10madmin1statesprovinces,{
+			onEachFeature: pop_ne10madmin1statesprovinces,
+			style: doStylene10madmin1statesprovinces
+		});
+		layerOrder[layerOrder.length] = exp_ne10madmin1statesprovincesJSON;
+		for (index = 0; index < layerOrder.length; index++) {
+			feature_group.removeLayer(layerOrder[index]);feature_group.addLayer(layerOrder[index]);
+		}
+		//add comment sign to hide this layer on the map in the initial view.
+		feature_group.addLayer(exp_ne10madmin1statesprovincesJSON);
+		function pop_redboxes(feature, layer) {					
+			var popupContent = '<table><tr><th scope="row">redcount</th><td>' + Autolinker.link(String(feature.properties['redcount'])) + '</td></tr><tr><th scope="row">redpercent</th><td>' + Autolinker.link(String(feature.properties['redpercent'])) + '</td></tr></table>';
+			layer.bindPopup(popupContent);
+		}
+
+		function doStyleredboxes(feature) {
+			switch (feature.properties.redcount) {
+				case '0':
+					return {
+						weight: '1.3',
+						fillColor: '#fff5f0',
+						color: '#000000',
+						weight: '1',
+						dashArray: '',
+						opacity: '1.0',
+						fillOpacity: '1.0',
+					};
+					break;
+				case '0.01':
+					return {
+						weight: '1.3',
+						fillColor: '#fee3d6',
+						color: '#000000',
+						weight: '1',
+						dashArray: '',
+						opacity: '1.0',
+						fillOpacity: '1.0',
+					};
+					break;
+				case '0.02':
+					return {
+						weight: '1.3',
+						fillColor: '#fcc5af',
+						color: '#000000',
+						weight: '1',
+						dashArray: '',
+						opacity: '1.0',
+						fillOpacity: '1.0',
+					};
+					break;
+				case '0.03':
+					return {
+						weight: '1.3',
+						fillColor: '#fca386',
+						color: '#000000',
+						weight: '1',
+						dashArray: '',
+						opacity: '1.0',
+						fillOpacity: '1.0',
+					};
+					break;
+				case '0.04':
+					return {
+						weight: '1.3',
+						fillColor: '#fb8161',
+						color: '#000000',
+						weight: '1',
+						dashArray: '',
+						opacity: '1.0',
+						fillOpacity: '1.0',
+					};
+					break;
+				case '0.05':
+					return {
+						weight: '1.3',
+						fillColor: '#f75d41',
+						color: '#000000',
+						weight: '1',
+						dashArray: '',
+						opacity: '1.0',
+						fillOpacity: '1.0',
+					};
+					break;
+				case '0.11':
+					return {
+						weight: '1.3',
+						fillColor: '#ea362a',
+						color: '#000000',
+						weight: '1',
+						dashArray: '',
+						opacity: '1.0',
+						fillOpacity: '1.0',
+					};
+					break;
+				case '0.29':
+					return {
+						weight: '1.3',
+						fillColor: '#cb181d',
+						color: '#000000',
+						weight: '1',
+						dashArray: '',
+						opacity: '1.0',
+						fillOpacity: '1.0',
+					};
+					break;
+				case '0.45':
+					return {
+						weight: '1.3',
+						fillColor: '#a80f15',
+						color: '#000000',
+						weight: '1',
+						dashArray: '',
+						opacity: '1.0',
+						fillOpacity: '1.0',
+					};
+					break;
+				default:
+					return {
+						weight: '1.3',
+						fillColor: '#67000d',
+						color: '#000000',
+						weight: '1',
+						dashArray: '',
+						opacity: '1.0',
+						fillOpacity: '1.0',
+					};
+					break;
+			}
+		}
+		var exp_redboxesJSON = new L.geoJson(exp_redboxes,{
+			onEachFeature: pop_redboxes,
+			style: doStyleredboxes
+		});
+		//add comment sign to hide this layer on the map in the initial view.
+		feature_group.addLayer(exp_redboxesJSON);
+		function pop_blueboxes(feature, layer) {					
+			var popupContent = '<table><tr><th scope="row">bluecount</th><td>' + Autolinker.link(String(feature.properties['bluecount'])) + '</td></tr><tr><th scope="row">bluepercent</th><td>' + Autolinker.link(String(feature.properties['bluepercent'])) + '</td></tr></table>';
+			layer.bindPopup(popupContent);
+		}
+
+		function doStyleblueboxes(feature) {
+			switch (feature.properties.bluecount) {
+				case '0':
+					return {
+						weight: '1.3',
+						fillColor: '#f7fbff',
+						color: '#000000',
+						weight: '1',
+						dashArray: '',
+						opacity: '1.0',
+						fillOpacity: '1.0',
+					};
+					break;
+				case '0.01':
+					return {
+						weight: '1.3',
+						fillColor: '#e3eef8',
+						color: '#000000',
+						weight: '1',
+						dashArray: '',
+						opacity: '1.0',
+						fillOpacity: '1.0',
+					};
+					break;
+				case '0.02':
+					return {
+						weight: '1.3',
+						fillColor: '#d1e2f2',
+						color: '#000000',
+						weight: '1',
+						dashArray: '',
+						opacity: '1.0',
+						fillOpacity: '1.0',
+					};
+					break;
+				case '0.03':
+					return {
+						weight: '1.3',
+						fillColor: '#b9d5ea',
+						color: '#000000',
+						weight: '1',
+						dashArray: '',
+						opacity: '1.0',
+						fillOpacity: '1.0',
+					};
+					break;
+				case '0.04':
+					return {
+						weight: '1.3',
+						fillColor: '#9ac7e0',
+						color: '#000000',
+						weight: '1',
+						dashArray: '',
+						opacity: '1.0',
+						fillOpacity: '1.0',
+					};
+					break;
+				case '0.06':
+					return {
+						weight: '1.3',
+						fillColor: '#72b2d7',
+						color: '#000000',
+						weight: '1',
+						dashArray: '',
+						opacity: '1.0',
+						fillOpacity: '1.0',
+					};
+					break;
+				case '0.08':
+					return {
+						weight: '1.3',
+						fillColor: '#519ccc',
+						color: '#000000',
+						weight: '1',
+						dashArray: '',
+						opacity: '1.0',
+						fillOpacity: '1.0',
+					};
+					break;
+				case '0.1':
+					return {
+						weight: '1.3',
+						fillColor: '#3585bf',
+						color: '#000000',
+						weight: '1',
+						dashArray: '',
+						opacity: '1.0',
+						fillOpacity: '1.0',
+					};
+					break;
+				case '0.17':
+					return {
+						weight: '1.3',
+						fillColor: '#1c6bb0',
+						color: '#000000',
+						weight: '1',
+						dashArray: '',
+						opacity: '1.0',
+						fillOpacity: '1.0',
+					};
+					break;
+				case '0.24':
+					return {
+						weight: '1.3',
+						fillColor: '#08519c',
+						color: '#000000',
+						weight: '1',
+						dashArray: '',
+						opacity: '1.0',
+						fillOpacity: '1.0',
+					};
+					break;
+				default:
+					return {
+						weight: '1.3',
+						fillColor: '#08306b',
+						color: '#000000',
+						weight: '1',
+						dashArray: '',
+						opacity: '1.0',
+						fillOpacity: '1.0',
+					};
+					break;
+			}
+		}
+		var exp_blueboxesJSON = new L.geoJson(exp_blueboxes,{
+			onEachFeature: pop_blueboxes,
+			style: doStyleblueboxes
+		});
+		//add comment sign to hide this layer on the map in the initial view.
+		feature_group.addLayer(exp_blueboxesJSON);
+
+		feature_group.addTo(map);
+		var title = new L.Control();
+		title.onAdd = function (map) {
+			this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+			this.update();
+			return this._div;
+		};
+		title.update = function () {
+			this._div.innerHTML = '<h2>Tweet Map of NYCFC and Red Bulls Supporters</h2>Based on #WinNYCFC and #WinRBNY Hashtags'
+		};
+		title.addTo(map);
+	var baseMaps = {
+		'OSM Standard': basemap_0
+	};
+		L.control.layers(baseMaps,{"blueboxes": exp_blueboxesJSON,"redboxes": exp_redboxesJSON,"ne10madmin1statesprovinces": exp_ne10madmin1statesprovincesJSON},{collapsed:false}).addTo(map);
+		function updateOpacity(value) {
+	}
+		map.locate({setView: true, maxZoom: 16});
+		function onLocationFound(e) {
+    		var radius = e.accuracy / 2;
+			L.marker(e.latlng).addTo(map)
+        	.bindPopup("You are within " + radius + " meters from this point").openPopup();
+			L.circle(e.latlng, radius).addTo(map);
+		}
+		map.on('locationfound', onLocationFound);
+		
+		L.control.scale({options: {position: 'bottomleft',maxWidth: 100,metric: true,imperial: false,updateWhenIdle: false}}).addTo(map);
+	</script>
+</body>
+</html>
