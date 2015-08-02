@@ -20,3 +20,42 @@ There is to this enterprise, Pointsman knows, a danger of seduction. Because of 
 
 Thomas Pynchon, Gravity's Rainbow
 
+
+Excerpts from Stevens, 'Sunday Morning'
+
+Why should she give her bounty to the dead?
+What is divinity if it can come
+Only in silent shadows and in dreams?
+Shall she not find in comforts of the sun,
+In pungent fruit and bright, green wings, or else
+In any balm or beauty of the earth,
+Things to be cherished like the thought of heaven?
+Divinity must live within herself...
+...
+Shall our blood fail? Or shall it come to be
+The blood of paradise? And shall the earth
+Seem all of paradise that we shall know? 
+
+
+
+Is there no change of death in paradise?
+Does ripe fruit never fall? Or do the boughs
+Hang always heavy in that perfect sky,
+Unchanging, yet so like our perishing earth,
+With rivers like our own that seek for seas
+They never find, the same receding shores
+That never touch with inarticulate pang?...
+Death is the mother of beauty, mystical,
+Within whose burning bosom we devise
+Our earthly mothers waiting, sleeplessly. 
+
+
+Supple and turbulent, a ring of men
+Shall chant in orgy on a summer morn
+Their boisterous devotion to the sun,
+Not as a god, but as a god might be,
+Naked among them, like a savage source.
+Their chant shall be a chant of paradise,
+Out of their blood, returning to the sky
+...And whence they came and whither they shall go
+The dew upon their feet shall manifest. 
