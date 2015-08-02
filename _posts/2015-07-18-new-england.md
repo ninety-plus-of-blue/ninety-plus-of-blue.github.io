@@ -26,7 +26,7 @@ rolled in. Then  one day the levy broke and
 we got the results we'd been waiting for, results that the team's performances deserved to get much sooner. 
 
 That second honeymoon has ended
-now. In the past two matches many, including myself, have seen the specter of our form during
+now.<!--break--> In the past two matches many, including myself, have seen the specter of our form during
 that winless streak. It has that period's lack of scoring chances, its indiscipline, and
 a style miles from the open,
 possession-based strategy most of us covet. Sunday offers a rare opportunity for a
