@@ -2,7 +2,7 @@ import tweepy
 import csv
 
 #csv writers
-f = open('tweet_coordinates_rbny.csv','w') 
+f = open('tweet_coordinates_rbny_11.csv','w') 
 csv_writer = csv.writer(f)
 csv_writer.writerow(['id','tweet','coordinates'])
 
@@ -20,8 +20,8 @@ geo_dict = {}
 coordinates_dict = {}
 place_dict = {}
 
-for x,n in enumerate(tweepy.Cursor(api.search,q='#winrbny',
-                    since="2015-06-24",
+for x,n in enumerate(tweepy.Cursor(api.search,q='#RBNY',
+                    since="2015-11-23",
                     lang="en").items()):
     if x > 5000:
         break
@@ -34,8 +34,8 @@ for x,n in enumerate(tweepy.Cursor(api.search,q='#winrbny',
             place_dict[x] = [n.text.encode('utf-8'),n.place.bounding_box.coordinates[0]]
             print place_dict[x]
         try:
-            location_dict[x] = [n.author._json['location']
-        except:
+            location_dict[x] = [n.author._json['location']]
+        except Exception:
             pass
 
 print location_dict.items()
@@ -43,9 +43,12 @@ print place_dict.items()
 
 with open('kartograph-test/world.json','a') as f:
     for thing in place_dict.items():
-        text = thing[1][0]
-        point1 = "Polygon((%s %s, %s %s, %s %s, %s %s, %s %s))" % (thing[1][1][0][0],thing[1][1][0][1],thing[1][1][1][0],thing[1][1][1][1],thing[1][1][2][0],thing[1][1][2][1],thing[1][1][3][0],thing[1][1][3][1],thing[1][1][0][0],thing[1][1][0][1])
-        csv_writer.writerow([thing[0],text,point1])
+        if thing[1][0] != '0.0%': 
+            text = thing[1][0]
+            point1 = "Polygon((%s %s, %s %s, %s %s, %s %s, %s %s))" % (thing[1][1][0][0],thing[1][1][0][1],thing[1][1][1][0],thing[1][1][1][1],thing[1][1][2][0],thing[1][1][2][1],thing[1][1][3][0],thing[1][1][3][1],thing[1][1][0][0],thing[1][1][0][1])
+            csv_writer.writerow([thing[0],text,point1])
+        else:
+            text = ''
         #f.write('\n"%s": {\n"%s",\n"lon0": %s,\n"lat0": %s\n}' %
                 #(thing[0],text,longitude,latitude))
 
