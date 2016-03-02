@@ -16,7 +16,7 @@ quote: |
     That breaks ancestrally each year into<br>
     Regenerate union. Let it always be there.
 text: "Show Saturday"
-text-author: Larkin, Phillip
+text-author: Phillip Larkin
 categories:
     - Larkin, Phillip
 form: poetry
