@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: The Year of Historic Seconds
 score: NYCFC 3 - 1 Preseason
 tags:
     - Preseason
@@ -33,7 +33,7 @@ qualitatively different experience than it was in 2015.
 
 Not that this is a bad thing in every sense. There's plenty about last season I
 left cheerily by the wayside "as the dismantled Show / Itself die[d] back into
-the area of work." Or so I muttered under my breath, shuffling out of the
+the area of work." <!--break-->Or so I muttered under my breath, shuffling out of the
 stadium for the last game of the 2015 season, a 3-1 defeat against a team going
 on to (slightly) better things. Around me were signs of anything *but*
 "regenerate union": a season that ended in disappointment bubbling over into
